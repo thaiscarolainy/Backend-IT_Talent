@@ -168,4 +168,4 @@ Se você deseja contribuir com o projeto, por favor, siga as instruções abaixo
 Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ### Contato
-Se você tiver alguma dúvida, sinta-se à vontade para abrir uma issue ou entrar em contato.
+Se você tiver alguma dúvida, sinta-se à vontade para abrir uma issue ou entrar em contato.# Backend-IT_Talent
