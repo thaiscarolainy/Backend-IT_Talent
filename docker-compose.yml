@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  database:
+    build:
+      context: ../Banco-IT_Talent/
+    container_name: banco_dados
+    # image: banco_it_talent-bd
+    ports:
+      - "3306:3036"
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: BANCO_DADOS_IT_TALENT
+  backend:
+    build:
+      context: .
+    container_name: back_end
+    # image: backend_it_talent
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database
+    environment:
+      MYSQL_HOST: database
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: BANCO_DADOS_IT_TALENT
